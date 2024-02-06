@@ -1,6 +1,6 @@
 const Footer = () => {
     return(
-        <div>
+        <div className="text-black">
             Copyright 2024 Driend
         </div>
     );
