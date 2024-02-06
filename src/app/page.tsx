@@ -5,11 +5,10 @@ import TextField from '@mui/material/TextField';
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center text-center">
       <Navbar />
       <h1>Driend</h1>
-      <Button variant="outlined">Outlined</Button>
-      <TextField id="outlined-basic" label="Put your text here" variant="outlined"/>
+      <TextField id="outlined-basic" label="Put your text here" variant="outlined" className="bg-gray-200 text-white"/>
       <Footer />
     </div>
   );
