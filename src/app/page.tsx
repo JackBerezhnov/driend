@@ -1,3 +1,5 @@
+'use client';
+
 import Button from '@mui/material/Button';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
@@ -16,12 +18,16 @@ async function getData() {
 export default async function Home() {
   const data = await getData();
 
+  function handlePost() {
+    console.log("Hello");
+  }
+
   return (
     <div className="flex flex-col justify-center items-center text-center bg-gray-200 h-screen">
       <Navbar />
       <h1 className="text-black">Driend</h1>
       <TextField id="outlined-basic" label="Put your text here" variant="outlined" className="bg-gray-200 text-white"/>
-      <Button variant="contained">Post</Button>
+      <Button onClick={handlePost} variant="contained">Post</Button>
       <p>{data.data[0].breed}</p>
       <Footer />
     </div>
