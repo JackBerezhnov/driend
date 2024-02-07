@@ -9,6 +9,7 @@ export default function Home() {
       <Navbar />
       <h1 className="text-black">Driend</h1>
       <TextField id="outlined-basic" label="Put your text here" variant="outlined" className="bg-gray-200 text-white"/>
+      <Button variant="contained">Post</Button>
       <Footer />
     </div>
   );
