@@ -29,6 +29,7 @@ export default async function Home() {
   function handleInput(event: React.ChangeEvent<HTMLInputElement>) {
     event.preventDefault();
     console.log(event.target.value);
+    setInput(event.target.value);
   }
 
   return (
