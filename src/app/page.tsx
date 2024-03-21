@@ -17,8 +17,8 @@ async function getData() {
 }
 
 export default async function Home() {
-  const [input, setInput] = useState('');
-
+  const [input, setInput] = useState<string>('');
+  const [record, setRecord] = useState([]);
 
   const data = await getData();
 
@@ -30,7 +30,10 @@ export default async function Home() {
     event.preventDefault();
     console.log(event.target.value);
     setInput(event.target.value);
+    setRecord(input);
   }
+
+  
 
   return (
     <div className="flex flex-col justify-center items-center text-center bg-gray-200 h-screen">
