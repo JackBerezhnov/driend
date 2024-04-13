@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-appwrite.js
+/src/app/appwrite.js
 
 # testing
 /coverage
