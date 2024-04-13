@@ -3,12 +3,13 @@ import { useState } from "react";
 import { account, ID } from "./appwrite";
 
 const LoginPage = () => {
+  
   const [loggedInUser, setLoggedInUser] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
 
-  const login = async (email, password) => {
+  const login = async (email:any, password:any) => {
     const session = await account.createEmailSession(email, password);
     setLoggedInUser(await account.get());
   };
