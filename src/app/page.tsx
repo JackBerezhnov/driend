@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { account, ID } from "./appwrite";
+import { account, ID } from "./appwrite.js";
 
 const LoginPage = () => {
   
@@ -10,7 +10,7 @@ const LoginPage = () => {
   const [name, setName] = useState("");
 
   const login = async (email:any, password:any) => {
-    const session = await account.createEmailSession(email, password);
+    const session = await account.createEmailPasswordSession(email, password);
     setLoggedInUser(await account.get());
   };
 
