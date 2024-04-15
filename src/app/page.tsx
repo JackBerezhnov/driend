@@ -37,7 +37,7 @@ const LoginPage = () => {
 
   return (
     <div>
-      <p>Not logged in</p>
+      <p>Not logged in yet</p>
       <form>
         <input
           type="email"
